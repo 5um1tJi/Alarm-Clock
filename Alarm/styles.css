@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(60deg, #201822, #468ea2);
+    color: #fff;
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Analog Clock */
+  .clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    background: linear-gradient(60deg, #bbcace, #67b1c6);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hour-hand, .minute-hand, .second-hand {
+    position: absolute;
+    background-color: #fff;
+    transform-origin: bottom center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hour-hand {
+    width: 6px;
+    height: 50px;
+    top: 50px;
+    left: 97px;
+    background: #f7fafa;
+  }
+  
+  .minute-hand {
+    width: 4px;
+    height: 70px;
+    top: 30px;
+    left: 98px;
+    background: #fff;
+  }
+  
+  .second-hand {
+    width: 2px;
+    height: 80px;
+    top: 20px;
+    left: 99px;
+    background: #ff4d4d;
+  }
+  
+  .clock-center {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    top: 94px;
+    left: 94px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Digital Clock */
+  .digital-clock {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  
+  /* Alarm Input and Buttons */
+  .alarm-set {
+    margin: 20px 0;
+  }
+  
+  #alarm-time {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+  }
+  
+  #set-alarm, #stop-alarm {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 100px;
+    background: #ff4d4d;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  #set-alarm:hover, #stop-alarm:hover {
+    background: #ff1a1a;
+  }
+  
+  #stop-alarm:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
