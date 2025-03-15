@@ -6,7 +6,7 @@ const currentTimeDisplay = document.getElementById('current-time');
 const alarmTimeInput = document.getElementById('alarm-time');
 const setAlarmButton = document.getElementById('set-alarm');
 const stopAlarmButton = document.getElementById('stop-alarm');
-const alarmList = document.createElement('ul'); // List to display alarms
+const alarmList = document.createElement('ul'); 
 document.body.appendChild(alarmList);
 
 let alarms = []; // Stores multiple alarms
@@ -76,7 +76,7 @@ setAlarmButton.addEventListener('click', () => {
 
 // Display all alarms
 function displayAlarms() {
-  alarmList.innerHTML = ''; // Clear previous list
+  alarmList.innerHTML = ''; 
   alarms.forEach((alarm, index) => {
     const listItem = document.createElement('li');
     listItem.textContent = `Alarm set for: ${alarm} `;
